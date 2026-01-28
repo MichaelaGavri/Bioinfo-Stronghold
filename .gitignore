@@ -1,0 +1,14 @@
+# gitignore
+
+# ignore all input and output files in txt form
+*.txt
+
+#ignore any logs
+*.log
+
+#ignore junk
+.DS_Store
+Thumbs.db
+
+#ignore PyCharm stuff
+.idea/
