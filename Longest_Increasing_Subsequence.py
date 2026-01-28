@@ -14,7 +14,7 @@ Return: A longest increasing subsequence of π, followed by a longest decreasing
 example = [8, 2, 1, 6, 5, 7, 4, 3, 9]
 l_d_l=[]
 
-def find_long(reihe,i,active_list):
+def find_long(reihe,i,active_list): #liste, position, ??
     position=0
     for j in reihe:
         if j>i:
@@ -35,10 +35,8 @@ def liste_durchgehen(reihe):
         active_list=[]
         position+=1
 
-#liste_durchgehen(example)
-#print(l_d_l)
 
-############### Lösung 2 ChatGPT##############
+############### Lösung 2 ##############
 
 def longest_increasing_subsequence(nums):
     if not nums:
@@ -71,7 +69,7 @@ def longest_increasing_subsequence(nums):
 
 
 # Beispielaufruf
-with open('Longest_Increasing_Subsequence.txt', 'r') as file:
+with open('samples/Longest_Increasing_Subsequence.txt', 'r') as file:
     lines = file.readlines()
     n = int(lines[0].strip())  # Erste Zeile gibt die Länge der Liste vor
     example = list(map(int, lines[1].split()))[:n]  # Zahlen aus zweiter Zeile
